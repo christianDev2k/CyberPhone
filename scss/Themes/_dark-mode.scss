@@ -1,0 +1,58 @@
+body.darkMode {
+    background-color: $color-dark-2;
+    .navbar {
+        background-color: $color-dark-3;
+        box-shadow: none;
+        #collapsibleNavBar {
+            .nav-link {
+                color: $color-white-3;
+            }
+        }
+    }
+
+    .myCarousel {
+        background-image: url('../image/product-header-bg-dark.jpg');
+        .carousel__content {
+            h6 {
+                color: $color-blue-4;
+            }
+            p {
+                color: $color-white-3;
+            }
+            .btn.btn--secondary {
+                background-color: transparent;
+                &:hover {
+                    color: $color-white-3;
+                    background-color: $color-blue-4;
+                }
+            }
+        }
+    }
+    .products {
+        .title {
+            color: $color-blue-2;
+        }
+        .card {
+            box-shadow: none;
+            background-color: $color-dark-4;
+
+            img {
+                box-shadow: none;
+                border-color: $color-blue-2;
+            }
+
+            .card-title, .price, .card__categories {
+                color: $color-blue-4;
+            }
+
+            .btn.btn--card {
+                box-shadow: none;
+                border-color: $color-blue-2;
+                &:hover {
+                    background-color: $color-blue-2;
+                    color: $color-white-3;
+                }
+            }
+        }
+    }
+}

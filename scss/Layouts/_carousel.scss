@@ -1,0 +1,38 @@
+.myCarousel {
+    background-image: url('../image/product-header-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding: 225px 0;
+    .carousel__content {
+        h1 {
+            @include Text($fs-4, $fw-3, $color-blue-2);
+            margin-bottom: 7px;
+        }
+        h6 {
+            @include Text($fs-5, $fw-2, $color-blue-1);
+            margin-bottom: $mg-1;
+        }
+        p {
+            @include Text($fs-2, $fw-1, $color-dark-1);
+            margin-bottom: $mg-2;
+        }
+        .btn:first-child {
+            margin-right: 7px;
+        }
+    }
+    img {
+        width: 560px;
+        height: 560px;
+    }
+}
+
+@include responsive(medium) {
+    .myCarousel {
+        .carousel__content {
+            h1 {
+                font-size: 44px;
+            }
+        }
+    }
+}

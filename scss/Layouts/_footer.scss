@@ -1,0 +1,27 @@
+footer {
+    background-color: $color-blue-2;
+    padding-bottom: $pd-7;
+    .angle-up-light, .angle-up-dark {
+        width: 100%;
+        margin-bottom: $mg-4;
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+    @include Text($fs-1, $fw-2, $color-white-3);
+    p {
+        font-weight: $fw-1;
+    }
+    .nav__item {
+        padding: 7px 14px;
+        &:hover {
+            opacity: 0.75;
+            transition: all 0.5s;
+        }
+    }
+    .nav__link {
+        text-decoration: none;
+        color: $color-white-3;
+    }
+}

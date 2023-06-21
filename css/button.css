@@ -1,0 +1,7 @@
+.btn {
+  padding: 15.5px 46px;
+}
+
+.btn.btn--primary {
+  background-image: linear-gradient(120deg, #60a4f4, #2a73dd);
+}/*# sourceMappingURL=button.css.map */

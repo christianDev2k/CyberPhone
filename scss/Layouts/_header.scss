@@ -1,0 +1,52 @@
+.navbar {
+    box-shadow: 0 2px 4px $color-white-2;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: $color-white-1;
+    z-index: 1000;
+    .navbar-brand {
+        @include Text($fs-3, $fw-3, $color-blue-2);
+    }
+    #collapsibleNavBar {
+        .nav-item {
+            .nav-link {
+                padding: 25px;
+                @include Text($fs-2, $fw-2, $color-blue-1);
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 2px;
+                    background-color: $color-blue-2;
+                    transform: scaleX(0);
+                    transition: all 0.2s;
+                }
+
+                &.active::after,
+                &:hover::after {
+                    transform: scaleX(1);
+                    width: 100%;
+                }
+
+                &.active {
+                    color: $color-blue-2;
+                }
+            }
+        }
+    }
+    .navbar-toggler {
+        border: none;
+        @include Text(22px, $fw-1, $color-dark-3);
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+
+@include responsive(large) {
+    #collapsibleNavBar .navbar-nav {
+        text-align: center;
+    }
+}

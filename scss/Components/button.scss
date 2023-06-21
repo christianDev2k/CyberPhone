@@ -1,0 +1,40 @@
+.btn {
+    padding: 15.5px 46px;
+    border: 2px solid transparent;
+    @include Text($fs-1, $fw-2, $color-white-3);
+}
+
+.btn.btn--primary {
+    background-image: linear-gradient(120deg, #60a4f4, #2a73dd);
+}
+
+.btn.btn--primary:hover {
+    opacity: 0.75;
+    color: $color-white-3;
+}
+
+.btn.btn--secondary {
+    background-color: $color-white-3;
+    border-color: $color-blue-2;
+    border-radius: $bd-2;
+    color: $color-blue-2;
+    transition: all 0.5s;
+}
+
+.btn.btn--secondary:hover {
+    background-color: $color-blue-2;
+    border-color: $color-blue-2;
+    color: $color-white-3;
+}
+
+.btn.btn--card {
+    padding: 8px 20px;
+    @include Text(10px, $fw-2, $color-blue-2);
+    box-shadow: 2px 2px 4px $color-white-2, -2px -2px 4px $color-white-3;
+}
+
+.btn.btn--card:hover {
+    box-shadow: inset 1px 1px 3px $color-white-2, inset -2px -2px 5px $color-white-3;
+    color: $color-blue-2;
+}
+

@@ -1,0 +1,30 @@
+.products {
+    padding: 100px 0;
+    .title {
+        @include Text($fs-6, $fw-3, $color-blue-1);
+        margin-bottom: 40px;
+    }
+
+    .card {
+        background-color: transparent;
+        border: none;
+        box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
+        padding: 30px;
+        margin-top: 30px;
+        img {
+            box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
+            border-radius: $bd-2;
+        }
+        .card-title, .price {
+            @include Text($fs-7, $fw-3, $color-blue-1);
+            margin-bottom: 7px;
+        }
+        .card__categories {
+            @include Text($fs-1, $fw-1, $color-blue-1);
+            margin-bottom: 14px;
+        }
+        .card__star {
+            color: $color-yellow-1;
+        }
+    }
+}
